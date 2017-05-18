@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'apache';
-    src: url('/Syntax-Checker/fonts/AldotheApache.ttf');
+    src: url('https://ruybrito106.github.io/Syntax-Checker/fonts/AldotheApache.ttf');
 }
 
 @font-face {
     font-family: 'enterfont';
-    src: url('/Syntax-Checker/fonts/Ubuntu-C.ttf');
+    src: url('https://ruybrito106.github.io/Syntax-Checker/fonts/Ubuntu-C.ttf');
 }
 
 #title {
