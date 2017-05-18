@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'apache';
+    src: url('/fonts/AldotheApache.ttf');
+}
+
+@font-face {
+    font-family: 'enterfont';
+    src: url('/fonts/Ubuntu-C.ttf');
+}
+
+#title {
+    font-family: 'apache';
+    font-size: 60px;
+    color: #0C0C0C;
+    text-align: 'center';
+    margin-bottom: 0px;
+    margin-top: 70px;
+}
+
+#subtitle {
+    font-family: 'apache';
+    font-size: 30px ;
+    color: #0C0C0C;
+    text-align: 'center';
+    margin-top: 5px;
+}
+
+#enter {
+    font-family: 'enterfont';
+    font-size: 18px;
+    color: #0C0C0C;
+    text-align: 'left';
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-bottom: 3px;
+}
+
+#board {
+    color: #FFFFFF;
+    margin-left: 20%;
+    margin-top: 5px;
+    width: 60%;
+    height: 15%;
+}
+
+#text {
+    background: transparent;
+    color: black;
+}
