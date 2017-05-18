@@ -8,13 +8,23 @@
     src: url('https://ruybrito106.github.io/Syntax-Checker/fonts/Ubuntu-C.ttf');
 }
 
+@font-face {
+    font-family: 'ubuntu-l';
+    src: url('https://ruybrito106.github.io/Syntax-Checker/fonts/Ubuntu-L.ttf');
+}
+
+@font-face {
+    font-family: 'ubuntu-m';
+    src: url('https://ruybrito106.github.io/Syntax-Checker/fonts/Ubuntu-M.ttf');
+}
+
 #title {
     font-family: 'apache';
     font-size: 60px;
     color: #0C0C0C;
     text-align: 'center';
     margin-bottom: 0px;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 #subtitle {
@@ -30,20 +40,57 @@
     font-size: 18px;
     color: #0C0C0C;
     text-align: 'left';
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 20%;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
 }
 
 #board {
     color: #FFFFFF;
     margin-left: 20%;
-    margin-top: 5px;
+    margin-top: 10px;
     width: 60%;
     height: 15%;
 }
 
-#text {
-    background: transparent;
-    color: black;
+#style-2 {
+    font-family: 'ubuntu-l';
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    resize: none;
+    background-color: #d9d9d9;
+    padding: 10px;
+}
+
+#style-2::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    background-color: #d9d9d9;
+}
+
+#style-2::-webkit-scrollbar
+{
+    width: 12px;
+    border-radius: 15px;
+    background-color: #d9d9d9;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #BA5A31;
+}
+
+#go {
+    margin-top: 25px;
+    font-family: 'apache';
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
 }
