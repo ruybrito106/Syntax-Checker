@@ -12,32 +12,14 @@
     <div id="middle">
         <p id="enter">Enter your Hive Query:</p>
         <div id="board">
-            <div contentEditable="true" class="smartText" id="style-2">User types here...</div>
+            <div contentEditable="true" class="smartText" id="style-2"></div>
         </div>
     </div>
     <div id="lower" align="center">
       <button id="go">Check</button>
     </div>
 
-    <script src="https://ruybrito106.github.io/Syntax-Checker/project/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-      var textarea = $(".smartText");
-      var highlightWords = function highlightWords() {
-          var original = textarea.text();
-          var replaced = original.replace(/@[a-zA-Z0-9]+/g, function (username) {
-              return "<span class='exists'>" + username + "</span>";
-          });
-          textarea.html(replaced);
-      };
-      var timer;
-
-      textarea.keyup(function (e) {
-          clearTimeout(timer);
-          if ($(this).text()) {
-              timer = setTimeout(highlightWords, 1000);
-          }
-      });
-    </script>
+    <script src="project/main.js"></script>
   </body>
 </html>
