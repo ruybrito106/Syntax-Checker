@@ -2,21 +2,14 @@ var reserved = ["EXISTS", "IN", "ALL", "ALTER", "AND", "ARRAY", "AS", "AUTHORIZA
 var textarea = $(".smartText");
 var text_area = document.getElementsByClassName('smartText')[0];
 
-function setEndOfContenteditable(contentEditableElement) {
+function setBack(element) {
     var range, selection;
-    if (document.createRange) {
-        range = document.createRange();
-        range.selectNodeContents(contentEditableElement);
-        range.collapse(false);
-        selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-    } else if (document.selection) {
-        range = document.body.createTextRange();
-        range.moveToElementText(contentEditableElement);
-        range.collapse(false);
-        range.select();
-    }
+    range = document.createRange();
+    range.selectNodeContents(element);
+    range.collapse(false);
+    selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
 }
 
 var highlight = function highlight() {
@@ -31,7 +24,7 @@ var highlight = function highlight() {
         textarea.html(str);
     }
 
-    setEndOfContenteditable(text_area);
+    setBack(text_area);
 };
 
 var timer;
